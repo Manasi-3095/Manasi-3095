@@ -41,6 +41,48 @@
 // let sum = nums.reduce((acc, curr) => acc + curr, 0);
 // console.log(sum); // Outputs 10
 
+
+
+//cretaing an object
+
+let employee={
+    name:"ram",
+    age:38,
+    gender:"Male",
+    
+};
+
+console.log(employee.name);
+console.log(employee["age"]);
+
+
+//object methods or object as a functions
+let person={
+    name:"arun",
+    greet:function(){
+        console.log("hii "+this.name);
+    } ,
+};
+person.greet();
+
+
+//modifying or updating object and its elments
+person.age=35;
+console.log(person);
+
+console.log(employee);
+employee.department="finance";
+console.log(employee);
+delete employee.gender;
+console.log(employee);
+
+
+//. Iterating Over Objects
+ for(let key in employee){
+    console.log(key +" : "+ employee[key]);
+ }
+ 
+
 //'for` loop:
 // let fruits = ["Apple", "Banana", "Orange"];
 // for (let i = 0; i < fruits.length; i++) {
