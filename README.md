@@ -92,3 +92,79 @@ console.log(employee);
 //`forEach()`:
 let fruits = ["Apple", "Banana", "Orange"];
 fruits.forEach((fruit) => console.log(fruit));
+
+
+
+
+
+
+
+assignment
+
+let Array=[];
+function printArray(){
+    console.log(Array);
+}
+
+function push(){
+    let value1=parseInt(prompt("enter no. to perform push operation in array"));
+    Array.push(value1);
+    console.log("value pushed ");
+}
+
+function pop(){
+    Array.pop();
+    console.log("value popped ");
+}
+
+function unshift(){
+    let value3=parseInt(prompt("enter no. to perform shift operation in array"));
+    Array.push(value3);
+    console.log("value unshifted ");
+}
+
+function shift(){
+    Array.shift();
+    console.log("value shifted");
+}
+
+function slice(){
+    let value1=parseInt(prompt("enter first index no.to perform slice operation in array"));
+    let value2=parseInt(prompt("enter first index no.to perform slice operation in array"));
+    Array.slice(value1, value2);
+    console.log("value slice");
+}
+
+function splice(){
+    let value1=parseInt(prompt("enter first index no.to perform splice operation in array"));
+    let value2=parseInt(prompt("enter first index no.to perform splice operation in array"));
+    Array.splice(value1, value2);
+    console.log("value splice");
+}
+
+let value=true;
+while(value){
+    let operation=prompt("Enter any one array operation from give list : push.pop.unshift,shift and to exit type endloop")
+
+if(operation==="push"){
+    push();
+    printArray();
+}
+else if(operation==="pop"){
+    pop();
+    printArray();
+}
+else if(operation==="unshift"){
+    unshift();
+    printArray();
+}
+else if(operation==="shift"){
+    shift();
+    printArray();
+}
+else if(operation==="endloop"){
+    value=false;
+}
+
+}
+
